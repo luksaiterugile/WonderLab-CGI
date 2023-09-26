@@ -1,0 +1,38 @@
+/*--------Užpildytos formos stilius-----*/
+
+body {
+	background: #c9e4db;
+	font-family: "Times New Roman", Times, serif;
+   	background-image: url("../images/backgroundimage.jpg");
+    	margin: 0em;
+}
+
+h1,h2,h3 {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+h2 {
+	margin-bottom: 0.3em;
+}
+
+table.registered {
+	border-style: ridge;
+	border-color: white;;
+	text-align: center;
+	margin-left: 32em;
+	font-size-adjust: 0.55;
+	background-color: #7d9e95;
+	table-layout: fixed;
+	width: 800px;
+	margin-bottom: 6em;
+}
+
+table.registered td {
+	color: black;
+	padding: 1em;
+	word-wrap: break-word;	
+	border-color: #c9e4db;
+	border-style: ridge;
+	padding-left: 2em;
+}

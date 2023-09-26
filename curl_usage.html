@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Dokumentacija</title>
+</head>
+
+<body>
+    <header>
+        <h1>"Curl" įrankio naudojimas</h1>
+    </header>
+
+    Norint imituoti naudojimąsi forma, esančią "WonderLab" tinkapyje, 
+    naudojame įrankį "curl" iš komandinės eilutės.<br><br>
+
+    <b>Komandos principas:</b> <br><br>
+    <b>http://127.0.0.1/cgi-bin/form.pl -F raktas=reikšmė</b><br><br>
+
+    <h2>Raktai ir jų reikšmės</h2>
+    <b>Privalomi laukai:</b><br><br>
+    <b>Vardas</b> ---> pildančiojo vardas<br><br>
+    <b>Pavardė</b> ---> pildančiojo pavardė<br><br>
+    <b>Telefono_nr</b> ---> pildančiojo telefono numeris, prasidedantis lietuvišku formatu (+3706 arba 86)<br><br>
+    <b>El_paštas</b> ---> pildančiojo elektroninis paštas (negalimos lietuviškos raidės) <br><br>
+    <b>Norima_paslauga</b> ----> pildantysis pateikia reikšmę kabutėse(""), renkasi iš: 
+    <ul>
+        <li>Moteriškas kirpimas</li>
+        <li>Vyriškas kirpimas</li>
+        <li>Vaikų kirpimas (1-12 m.)</li>
+        <li>Plaukų dažymas Ombre technika</li>
+        <li>Plaukų dažymas Balayage technika</li>
+        <li>Šaknų dažymas</li>
+        <li>Pilnas plaukų dažymas</li>
+        <li>Vestuvinė šukuosena</li>
+        <li>Antakių korekcija ir dažymas</li>
+        <li>Gelinis nagų lakavimas</li>
+        <li>Gelinis nagų priauginimas</li>
+        <li>Gelinių nagų korekcija</li>
+        <li>Higieninis manikiūras</li>
+        <li>Atpalaiduojantis viso kūno masažas</li>
+        <li>Klasikinis viso kūno masažas</li>
+        <li>Aromaterapinis masažas</li>
+        <li>Viso kūno pilingas</li>
+    </ul>
+
+    <b>Norimas_meistras</b> ---> pildantysis pateikia reikšmę kabutėse(""), renkasi iš: 
+    <ul>
+        <li>Bet kuris meistras</li>
+        <li>Ona Kavaliauskaitė</li>
+        <li>Rūta Janauskienė</li>
+        <li>Odeta Alinkaitė</li>
+        <li>Vilija Šabrauskienė</li>
+        <li>Aneta Lasauskaitė</li>
+        <li>Otilija Dambrauskienė</li>
+        <li>Gabija Velinskaitė"</li>
+        <li>Goda Gilenovienė</li>
+        <li>Gabrielė Belikovaitė</li>
+        <li>Ernesta Šabrauskaitė</li>
+        <li>Emilija Einovienė</li>
+        <li>Neda Juozapavičiūtė</li>
+    </ul>
+
+    <b>Data</b> ---> pildantysis pateikia datą metai-mėnesis-diena formatu, atskirdamas duomenis brūkšneliu <br><br>
+    <b>Vizito_laikas</b> ---> pildantysis renkasi iš:
+    <ul>
+        <li>9:00</li>
+        <li>10:00</li>
+        <li>11:00</li>
+        <li>12:00</li>
+        <li>13:00</li>
+        <li>14:00</li>
+        <li>15:00</li>
+        <li>16:00</li>
+        <li>17:00</li>
+        <li>18:00</li>
+        <li>19:00</li>
+    </ul>
+    <b>Neprivalomi laukai:</b><br><br>    
+    <b>Laikas_prieš_vizitą</b> ---> (neprivalomas) pildantysis pateikia reikšmę kabutėse(""), renkasi iš:
+    <ul>
+        <li>15 minučių prieš nurodytą laiką</li>
+        <li>30 minučių prieš nurodytą laiką</li>
+        <li>45 minučių prieš nurodytą laiką</li>
+        <li>1 valanda prieš nurodytą laiką</li>
+        <li>1 valanda 15 minučių prieš nurodytą laiką</li>
+        <li>1 valanda 30 minučių prieš nurodytą laiką</li>
+        <li>1 valanda 45 minutės prieš nurodytą laiką</li>
+        <li>2 valandos prieš nurodytą laiką</li>
+        <li>Bet kada prieš nurodytą laiką</li>
+    </ul>
+    
+    <b>Laikas_po_vizito</b> ---> (neprivalomas) pildantysis pateikia reikšmę kabutėse(""), renkasi iš:
+    <ul>
+        <li>15 minučių po nurodyto laiko</li>
+        <li>30 minučių po nurodyto laiko</li>
+        <li>45 minutės po nurodyto laiko</li>
+        <li>1 valanda po nurodyto laiko</li>
+        <li>1 valanda 15 minučių po nurodyto laiko</li>
+        <li>1 valanda 30 minučių po nurodyto laiko</li>
+        <li>1 valanda 45 minutės po nurodyto laiko</li>
+        <li>2 valandos po nurodyto laiko</li>
+        <li>Bet kada po nurodyto laiko</li>
+    </ul>
+    <b>Privalomas laukas:</b><br><br>
+    <b>Naudojimosi_sąlygos</b> ---> pildantysis patvirtina sutikimą parašydamas - Taip  <br><br>
+
+    <b>Neprivalomi laukai:</b> <br><br>
+    <b>Naujienlaiškis</b> ---> (neprivalomas) pildantysis gali patvirtinti parašymas - Taip <br><br>
+    <b>Papildoma_informacija</b> ---> (neprivalomas) pildantysis gali pateikti papildomą informaciją (iki 150 simbolių), informacija pateikiama kabutėse ("") <br><br>
+
+    <h2>Naudojimosi pavyzdys</h2>
+    curl http://127.0.0.1/cgi-bin/form.pl -F Vardas=Rugilė -F Pavardė=Lukšaitė -F Telefono_nr=+37061111111 -F El_paštas=bandymas@gmail.com -F Norima_paslauga="Moteriškas kirpimas" -F Norimas_meistras="Bet kuris meistras" -F Data=2021-11-30 -F Vizito_laikas=9:00 -F Laikas_prieš_vizitą="15 minučių prieš nurodytą laiką" -F Laikas_po_vizito="30 minučių po nurodyto laiko" -F Naudojimosi_sąlygos=Taip -F Naujienlaiškis=Taip
+    <br><br><br>
+   
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,391 @@
+/*-----------------------------HTML failų stilius----------------------*/
+
+
+/*----Bendras HTML stilius visiems puslapiams-----*/
+
+
+/* Pagrindinio kūno nustatymai */
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background-image: url("../images/backgroundimage.jpg");
+    margin: 0em;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1.5em;
+    background-color: #7d9e95;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+}
+
+
+/* Navigacijos tarp puslapių dalis */
+
+.navigation-bar {
+    width: 100%;
+    height: 5.5em;
+    background-color: #7d9e95;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 15em;
+    height: 6em;
+    margin-top: -1em;
+    margin-left: 1.5em;
+}
+
+.navigation-bar ul {
+    margin: 0em;
+    text-align: center;
+    float: right;
+    background-color: #7d9e95;
+}
+
+.navigation-bar li {
+    list-style-type: none;
+    padding: 0em;
+    height: 1.2em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    display: inline;
+}
+
+.navigation-bar li a {
+    color: white;
+    font-family: "Lucida Console", Courier, monospace;
+    font-size: 1.25em;
+    line-height: 4.375em;
+    padding: 0.3125em 0.9375em;
+}
+
+
+/* Reakcija į pelytės priėjimą*/
+
+.navigation-bar a:hover {
+    background-color: #7d9e95;
+    color: black;
+}
+
+
+/*-------Pagrindinis puslapis (index.html)-------*/
+
+
+/* Pagrindinio puslapio pasisveikinimas */
+
+.maintext {
+    text-align: center;
+    margin-top: 7em;
+    margin-bottom: 2em;
+    font-size: large;
+}
+
+
+/* Kiekvienos paslaugos mini aprašymas */
+
+.servicetypes {
+    display: inline;
+    /*Vaizdavimas eilutėje*/
+    padding-bottom: 8em;
+}
+
+.servicetypes .captioned-image {
+    /* Vaizdavimas eilutėje, priskaitant dydžius */
+    display: inline-block;
+    width: 25em;
+    width: auto;
+    border-style: ridge;
+    border-color: #7d9e95;
+    margin-left: 5em;
+}
+
+.servicetypes figure {
+    width: 17.1875em;
+    /*vaizdavimas atskiroje
+  eilutėje, užima atitinkamą plotį*/
+    display: block;
+    text-align: center;
+}
+
+figure img {
+    width: 20em;
+    height: 15.625em;
+    border-style: ridge;
+    border-color: #7d9e95;
+    margin-left: -1.60em;
+}
+
+figure figcaption {
+    margin-right: -1em;
+}
+
+
+/*-------Paslaugu puslapis (services.html)-------*/
+
+
+/* citata ir informacija*/
+
+.quote {
+    text-align: left;
+    font-size: large;
+    margin-top: 6em;
+    margin-bottom: 2em;
+    margin-left: 2em;
+}
+
+
+/* Kainų lentelė*/
+
+.prices {
+    font-size: medium;
+    float: left;
+    margin-bottom: 6em;
+    margin-top: -1em;
+    margin-left: 15em;
+    text-align: center;
+}
+
+.pricelabel{
+    margin-left: 4em;
+}
+
+
+/* Modifikacijos vidinių headerių */
+
+.section {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Kainų lentelės headerio modifikacija*/
+
+.tableheader {
+    font-size: large;
+}
+
+.servicepicture img {
+    width: 56.25em;
+    height: 35em;
+    border-style: ridge;
+    float: right;
+    margin-bottom: 6em;
+    margin-top: 1em;
+}
+
+
+/*-------Kontaktu puslapis (contact.html)-------*/
+
+.longquote {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 6em;
+}
+
+
+/* Visa informacija */
+
+.aboutus {
+    text-align: center;
+    margin-bottom: 6em;
+}
+
+
+/* Darbo laiko lentelės modifikacija*/
+
+.workhours {
+    margin-bottom: -2em;
+    margin-top: -2em;
+}
+
+ol {
+    display: inline-block;
+    text-align: left;
+}
+
+
+/* spalvos pakeitimas mark žymės*/
+
+mark {
+    background-color: white;
+    color: black;
+}
+
+
+/*-------Forma/anketa (form.html)-------*/
+
+
+/* Pagrindine infomacija */
+
+.registrationinfo {
+    margin-left: 2em;
+    margin-top: 6em;
+}
+
+/* Formos sucentravimas*/
+
+.tableclass {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    margin-bottom: 6em;
+    margin-top: -1em;
+}
+
+
+/* Tarpai tarp label ir inputo */
+
+.formlabel {
+    margin-bottom: 0em;
+    margin-top: 0em;
+}
+
+fieldset {
+    background-color: #7d9e95;
+    color: black;
+}
+
+
+/* Kiekvienam label priskiriame 
+atitinkama dydį */
+
+.labels {
+    display: inline-block;
+    width: 8.125em;
+}
+
+
+/* Bet kokioms, visoms įvestims 
+nustatome specifikacijas */
+
+input[type="text"] {
+    display: inline-block;
+    width: 13.125em;
+}
+
+input[type="email"] {
+    display: inline-block;
+    width: 13.125em;
+}
+
+input[type="tel"] {
+    display: inline-block;
+    width: 13.125em;
+}
+
+#service_type,
+#master,
+#hour,
+#timebefore,
+#timeafter {
+    display: inline-block;
+    width: 13.125em;
+}
+
+input[type="date"] {
+    display: inline-block;
+    width: 13.125em;
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 13.125em;
+}
+
+
+/*--Prisitaikymas prie įvairaus dydžio ekranų---*/
+
+
+/* Ekranams siauresniems nei 480 px. Išmaniųjų telefonų dydis */
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+    .logo {
+        margin-left: 9.375em;
+    }
+    /* Pagrindinio puslapio pritaikymas*/
+    .maintext {
+        margin-top: 15em;
+    }
+    figure img {
+        width: 17.5em;
+        height: 12.5em;
+        margin-left: -1em;
+    }
+    figure figcaption {
+        margin-left: -2em;
+    }
+    .servicetypes .captioned-image {
+        width: 20.625em;
+    }
+    /* Paslaugu puslapio pritaikymas */
+    .quote {
+        padding-top: 8em;
+    }
+    .prices {
+        margin-left: 5em;
+        margin-bottom: 1em;
+    }
+    .pricelabel {
+        padding-left: 2em;
+    }
+    .servicepicture img {
+        width: 28.125em;
+        height: 15.625em;
+    }
+    .servicepicture {
+        margin-right: -1em;
+    }
+    table {
+        table-layout: fixed;
+        width: 18.75em;
+    }
+    /* Formos puslapio pritaikymas*/
+    .registrationinfo {
+        margin-top: 15em;
+        margin-right: 2em;
+    }
+    fieldset {
+        width: 90%;
+    }
+    textarea {
+        width: 80%;
+    }
+    .labels {
+        width: 7.5em;
+    }
+    /* Informacijos puslapio pritaikymas*/
+    .longquote {
+        padding-bottom: 3em;
+    }
+}
+
+
+/* Ekranams didesniems už 500 px. Plančetės dydis */
+
+@media screen and (min-width: 501px) and (max-width: 768px) {
+    .navigation-bar li a {
+        font-size: small;
+    }
+    /* Paslaugu puslapio pritaikymas */
+    .prices {
+        margin-left: 14em;
+        margin-bottom: 1em;
+    }
+    .pricelabel {
+        margin-left: 1em;
+    }
+    .servicepicture img {
+        width: 43.75em;
+        height: 25em;
+    }
+}

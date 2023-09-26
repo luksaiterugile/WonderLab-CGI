@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="WonderLab beauty salon" />
+    <meta name="keywords" content="Beauty, Hair, Nails, Massage" />
+    <meta name="author" content="Rugilė Lukšaitė" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Registracija vizitui</title>
+</head>
+
+<body>
+    <!-- Pagrindinė navigacijos skiltis-->
+    <header>
+        <nav class="navigation-bar">
+            <img class="logo" src="../images/logo.jpg" alt="Picture of WonderLab logo" />
+            <ul>
+                <li><a href="index.html">Apie mus</a></li>
+                <li><a href="services.html">Paslaugos</a></li>
+                <li><a href="form.html">Registracija vizitui</a></li>
+                <li><a href="contact.html">Kontaktai</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Svarbi informacija apie registraciją-->
+    <div class="registrationinfo">
+        <h2>Registracija vizitui</h2>
+        <p>
+            Dėkojame, kad renkates <sup>WonderLab!</sup>. 
+			Norint užsiregistruoti vizitui prašome užpildyti 
+			šią formą bei pateikti galiojantį el.paštą ir
+			telefono numerį. Patvirtinimas ir papildoma
+			informacija apie vizitus bus atsiųsta per 24 valandas.
+        </p>
+	<p><a href="curl_usage.html">Instrukcija</a> kaip naudotis anketos pildymu iš komandinės eilutės</p><br>
+    </div>
+
+    <!-- Registracijos forma -->
+    <div class="tableclass">
+        <form action="cgi-bin/form.pl" method="post">
+            <h2>Jūsų kontaktinė informacija</h2>
+            <fieldset class="contactinfo">
+                <h4 class="formlabel">Prašome įvesti kontaktinę informaciją</h4>
+                <br />
+                <label class="labels" for="name">Vardas</label>
+                <input type="text" name="Vardas" id="name" required />
+                <label class="labels" for="surname">Pavardė</label>
+                <input type="text" name="Pavardė" id="surname" required /><br />
+                <label class="labels" for="phone">Telefono nr.</label>
+                <input type="tel" name="Telefono_nr" id="phone" required />
+                <label class="labels" for="email">El.paštas</label>
+                <input type="email" name="El_paštas" id="email" required />
+            </fieldset>
+
+            <fieldset>
+                <h4 class="formlabel">Prašome pasirinkti paslaugą bei meistrą</h4>
+                <br />
+                <label class="labels" for="service_type">Norima paslauga</label>
+                <select name="Norima_paslauga" id="service_type" required>
+            <option value="">&nbsp;</option>
+            <option value="Moteriškas kirpimas">Moteriškas kirpimas</option>
+            <option value="Vyriškas kirpimas">Vyriškas kirpimas</option>
+            <option value="Vaikų kirpimas (1-12 m.)">Vaikų kirpimas (1-12 m.)</option>
+            <option value="Plaukų dažymas Ombre technika">Plaukų dažymas Ombre technika</option>
+            <option value="Plaukų dažymas Balayage technika">
+              Plaukų dažymas Balayage technika
+            </option>
+            <option value="Šaknų dažymas">Šaknų dažymas</option>
+            <option value="Pilnas plaukų dažymas">Pilnas plaukų dažymas</option>
+            <option value="Vestuvinė šukuosena">Vestuvinė šukuosena</option>
+            <option value="Antakių korekcija ir dažymas">Antakių korekcija ir dažymas</option>
+            <option value="Gelinis nagų lakavimas">Gelinis nagų lakavimas</option>
+            <option value="Gelinis nagų priauginimas">Gelinis nagų priauginimas</option>
+            <option value="Gelinių nagų korekcija">Gelinių nagų korekcija</option>
+            <option value="Higieninis manikiūras">Higieninis manikiūras</option>
+            <option value="Atpalaiduojantis viso kūno masažas">
+              Atpalaiduojantis viso kūno masažas
+            </option>
+            <option value="Klasikinis viso kūno masažas">Klasikinis viso kūno masažas</option>
+            <option value="Aromaterapinis masažas">Aromaterapinis masažas</option>
+            <option value="Viso kūno pilingas">Viso kūno pilingas</option>
+          </select>
+                <label class="labels" for="master">Norimas meistras</label>
+                <select name="Norimas_meistras" id="master" required>
+            <option value="">&nbsp;</option>
+            <option value="Bet kuris meistras">Bet kuris meistras</option>
+            <option value="Ona Kavaliauskienė">Ona Kavaliauskaitė</option>
+            <option value="Rūta Janauskienė">Rūta Janauskienė</option>
+            <option value="Odeta Alinkaitė">Odeta Alinkaitė</option>
+            <option value="Vilija Šabrauskienė">Vilija Šabrauskienė</option>
+            <option value="Aneta Lasauskaitė">Aneta Lasauskaitė</option>
+            <option value="Otilija Dambrauskienė">Otilija Dambrauskienė</option>
+            <option value="Gabija Velinskaitė">Gabija Velinskaitė</option>
+            <option value="Goda Gilenovienė">Goda Gilenovienė</option>
+            <option value="Gabrielė Belikovaitė">Gabrielė Belikovaitė</option>
+            <option value="Ernesta Šabrauskaitė">Ernesta Šabrauskaitė</option>
+            <option value="Emilija Einovienė">Emilija Einovienė</option>
+            <option value="Neda Juozapavičiūtė">Neda Juozapavičiūtė</option>
+          </select>
+            </fieldset>
+
+            <fieldset>
+                <h4 class="formlabel">Pasirinkite galima vizito datą ir laiką</h4>
+                <br />
+                <label class="labels" for="date">Vizito data</label>
+                <input type="date" name="Data" id="date" required />
+                <label class="labels" for="hour">Vizito laikas</label>
+                <select name="Vizito_laikas" id="hour" required>
+            <option value="">&nbsp;</option>
+            <option value="9:00">9:00</option>
+            <option value="10:00">10:00</option>
+            <option value="11:00">11:00</option>
+            <option value="12:00">12:00</option>
+            <option value="13:00">13:00</option>
+            <option value="14:00">14:00</option>
+            <option value="15:00">15:00</option>
+            <option value="16:00">16:00</option>
+            <option value="17:00">17:00</option>
+            <option value="18:00">18:00</option>
+            <option value="19:00">19:00</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <h4 class="formlabel">
+                    Jei jūsų norimas laikas keistųsi,
+					kiek laiko prieš ir po nurodyto 
+					laiko galėtumėte atvykti į vizitą?
+                </h4>
+                <br />
+                <label class="labels" for="timebefore">Prieš vizitą</label>
+                <select name="Laikas_prieš_vizitą" id="timebefore">
+            <option value="">&nbsp;</option>
+            <option value="15 minučių prieš nurodytą laiką">15 minučių prieš</option>
+            <option value="30 minučių prieš nurodytą laiką">30 minučių prieš</option>
+            <option value="45 minučių prieš nurodytą laiką">45 minutės prieš</option>
+            <option value="1 valanda prieš nurodytą laiką">1 valanda prieš</option>
+            <option value="1 valanda 15 minučių prieš nurodytą laiką">1 valanda 15 minučių prieš</option>
+            <option value="1 valanda 30 minučių prieš nurodytą laiką">1 valanda 30 miunčių prieš</option>
+            <option value="1 valanda 45 minutės prieš nurodytą laiką">1 valanda 45 minutės prieš</option>
+            <option value="2 valandos prieš nurodytą laiką">2 valandos prieš</option>
+            <option value="Bet kada prieš nurodytą laiką">Bet kada prieš</option>
+          </select>
+                <label class="labels" for="timeafter">Po vizito</label>
+                <select name="Laikas_po_vizito" id="timeafter">
+            <option value="">&nbsp;</option>
+	    <option value="15 minučių po nurodyto laiko">15 minučių po</option>
+            <option value="30 minučių po nurodyto laiko">30 minučių po</option>
+            <option value="45 minutės po nurodyto laiko">45 minutės po</option>
+            <option value="1 valanda po nurodyto laiko">1 valanda po</option>
+            <option value="1 valanda 15 minučių po nurodyto laiko">1 valanda 15 minučių po</option>
+            <option value="1 valanda 30 minučių po nurodyto laiko">1 valanda 30 miunčių po</option>
+            <option value="1 valanda 45 minutės po nurodyto laiko">1 valanda 45 minutės po</option>
+            <option value="2 valandos po nurodyto laiko">2 valandos po</option>
+            <option value="Bet kada po nurodyto laiko">Bet kada po</option>
+          </select>
+            </fieldset>
+
+            <fieldset>
+                <input type="checkbox" name="Naudojimosi_sąlygos" value="Taip" required /> Sutinku su naudojimosi sąlygomis
+                <input type="checkbox" name="Naujienlaiškis" value="Taip" /> Sutinku gauti naujienlaiškį
+            </fieldset>
+
+            <fieldset>
+                <label for="other">Kita informacija</label><br />
+                <textarea name="Papildoma_informacija" id="other" rows="4" cols="50" maxlength="150"></textarea>
+            </fieldset>
+
+            <fieldset class="submit">
+                <input type="submit" value="Pateikti" />
+            </fieldset>
+        </form>
+    </div>
+
+    <footer id="footer">WonderLab</footer>
+</body>
+
+</html>
