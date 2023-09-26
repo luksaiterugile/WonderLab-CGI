@@ -14,7 +14,8 @@ To use this CGI program, follow these steps:
    ```apacheconf
    ScriptAlias /cgi-bin/ /path/to/your/repository/cgi-bin/
    <Directory "/path/to/your/repository/cgi-bin/">
-       AllowOverride None
+       DirectoryIndex index.html
+       AllowOverride All
        Options +ExecCGI
        AddHandler cgi-script .cgi .pl
        Require all granted
